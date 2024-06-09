@@ -7,6 +7,8 @@ footer {
   bottom: 0;
   left: 50;
   gap: 5px;
+  width: 100%;
+  font-size: 14px;
 }
 .keyboard-row {
   display: flex;
@@ -19,11 +21,20 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid #d3d6da;
-  width: 50px;
+  background-color: #e4e4e4;
+  border-radius: 10px;
+  width: 40px;
   height: 50px;
+  font-weight: bold;
 }
 
-.back-space-icon {
-  width: 20px;
+.back-space-icon svg {
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wide {
+  width: 70px;
 }
