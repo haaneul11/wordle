@@ -28,8 +28,11 @@ function appStart() {
     index = 0; //인덱스 초기화
   };
 
-  const handleEnterKey = () => {
+  const handleEnterKey = async () => {
     let 맞은_갯수 = 0;
+    const 응답 = await fetch("/answer");
+    const 정답 = await 응답.json();
+
     for (let i = 0; i < 5; i++) {
       const block = document.querySelector(
         `.board-column[data-index='${attempts}${i}']`
